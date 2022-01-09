@@ -4,6 +4,8 @@ RUN apk add --no-cache nodejs npm
 
 WORKDIR /root
 
+RUN chmod a+x /root
+
 RUN npm install elm-tooling
 
 ADD elm-tooling.json /root
