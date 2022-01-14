@@ -12,6 +12,8 @@ ADD elm-tooling.json /root
 
 RUN npx --no-install elm-tooling install
 
+RUN npm install elm-review
+
 ENV PATH=/root/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 ENTRYPOINT ["elm"]
